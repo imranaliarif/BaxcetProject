@@ -67,7 +67,7 @@ public class DashBoardFragment extends Fragment {
 
 
         HashMap<String, Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("why to waste ime in Marts ?", R.drawable.dashboard_slide_image1);
+        file_maps.put("why to waste time in Marts ?", R.drawable.dashboard_slide_image1);
         file_maps.put("when you can have items at your doorstep", R.drawable.dashboard_slide_image2);
 
 

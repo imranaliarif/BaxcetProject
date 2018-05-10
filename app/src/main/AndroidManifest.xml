@@ -47,7 +47,8 @@
             android:name=".Activities.SearchLocationActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.SearchBarActivity"></activity>
-        <activity android:name=".Activities.LoginActivityNew"></activity>
+        <activity android:name=".Activities.LoginActivityNew"
+            android:windowSoftInputMode="stateHidden"></activity>
     </application>
 
 </manifest>
