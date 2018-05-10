@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_orders"
+            android:title="My Orders"
+        />
+        <item
+            android:id="@+id/nav_viewCart"
+            android:title="View Cart" />
+        <item
+            android:id="@+id/nav_howToUSe"
+            android:title="How To Use" />
+        <item
+            android:id="@+id/nav_whyUs"
+            android:title="Why Us" />
+
+        <item
+            android:id="@+id/nav_returnAndRefundPolicy"
+            android:title="Return and Refund Policy" />
+        <item
+            android:id="@+id/nav_termsAndConditions"
+            android:title="Terms and Condition" />
+        <item
+            android:id="@+id/nav_weValueYourPrivacy"
+            android:title="We Value Your Privacy" />
+        <item
+            android:id="@+id/nav_contactUs"
+            android:title="Contact Us" />
+
+    </group>
+
+
+</menu>

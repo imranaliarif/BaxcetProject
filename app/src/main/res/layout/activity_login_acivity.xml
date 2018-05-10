@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    tools:context="com.codiansoft.baxcetproject.Activities.LoginAcivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baxkit_logo"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/rounded_view"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_email"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                />
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="Email"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/layout_email">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_key"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                />
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="Password"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/layout_password"
+            android:layout_alignStart="@+id/btn_create_account" />
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget password?"
+            android:layout_below="@id/btn_login"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:id="@+id/tv_or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="11"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:layout_below="@id/tv_forget_password">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4.8"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/darker_gray"></View>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1.4"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4.8"
+                android:layout_gravity="center_vertical"
+
+                android:background="@android:color/darker_gray"></View>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="create account"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_below="@id/tv_or"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
